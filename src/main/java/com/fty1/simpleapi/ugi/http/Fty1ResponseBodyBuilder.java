@@ -46,4 +46,8 @@ public class Fty1ResponseBodyBuilder {
         Fty1ResponsePageInfo fty1ResponsePageInfo = Fty1ResponsePageInfoBuilder.buildByRTResult(pageInfo);
         return builder(res.getSuccess(),res.getCode(),res.getMsg(),res.getData(),fty1ResponsePageInfo);
     }
+
+    public static Fty1ResponseBody system(Exception e) {
+        return builder(false, ResultConstant.SYS_CODE_FAILUER,"系统异常",e,null);
+    }
 }

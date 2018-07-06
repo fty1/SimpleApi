@@ -11,7 +11,7 @@ public class Fty1RequestBodyBuilder {
             return false;
         }
 
-        return (null == fty1ResponseBody.getData());
+        return (null != fty1ResponseBody.getData());
     }
 
 }
