@@ -1,7 +1,7 @@
-package com.fty1.simpleapi.ugi.http;
+package com.fty1.simpleapi.cci.http;
 
-import com.fty1.simpleapi.ugi.http.response.Fty1ResponsePageInfo;
-import com.fty1.simpleapi.ugi.runtime.result.RTResultPageInfo;
+import com.fty1.simpleapi.cci.http.response.Fty1ResponsePageInfo;
+import com.fty1.simpleapi.cci.runtime.result.RTResultPageInfo;
 
 public class Fty1ResponsePageInfoBuilder {
 

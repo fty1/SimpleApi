@@ -1,4 +1,4 @@
-package com.fty1.simpleapi.ugi;
+package com.fty1.simpleapi.cci;
 
 public class ResultConstant {
     public final static String SYS_CODE_SUCCESS = "1";

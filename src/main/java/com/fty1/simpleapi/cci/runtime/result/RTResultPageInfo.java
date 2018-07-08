@@ -1,15 +1,12 @@
-package com.fty1.simpleapi.ugi.http.response;
+package com.fty1.simpleapi.cci.runtime.result;
 
-import java.io.Serializable;
-
-public class Fty1ResponsePageInfo<T extends Serializable> implements Serializable {
-
-    private static final long serialVersionUID = -7457065997751483127L;
+public class RTResultPageInfo {
 
     private Long pageSize = 10L;
     private Long pageNumber = 1L;
     private Long totlePage;
     private Long totleItem;
+
 
     public Long getPageSize() {
         return pageSize;

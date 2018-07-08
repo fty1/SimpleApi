@@ -1,4 +1,4 @@
-package com.fty1.simpleapi.ugi.http.response;
+package com.fty1.simpleapi.cci.http.response;
 
 import java.io.Serializable;
 

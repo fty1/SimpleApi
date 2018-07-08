@@ -1,7 +1,7 @@
 package com.fty1.simpleapi.sci.logic.service;
 
 import com.fty1.simpleapi.sci.jpa.entity.SCIUriEntity;
-import com.fty1.simpleapi.ugi.runtime.result.RTResult;
+import com.fty1.simpleapi.cci.runtime.result.RTResult;
 
 public interface SCIUriService {
 

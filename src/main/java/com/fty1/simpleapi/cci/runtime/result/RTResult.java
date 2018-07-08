@@ -1,4 +1,4 @@
-package com.fty1.simpleapi.ugi.runtime.result;
+package com.fty1.simpleapi.cci.runtime.result;
 
 import java.io.Serializable;
 

@@ -1,0 +1,16 @@
+package com.fty1.simpleapi.sci.model.uri.http;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HttpRequestBody {
+    private Map<String,Object> map = new HashMap<>();
+
+    public Map<String, Object> getMap() {
+        return map;
+    }
+
+    public void setMap(Map<String, Object> map) {
+        this.map = map;
+    }
+}

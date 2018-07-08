@@ -1,6 +1,6 @@
-package com.fty1.simpleapi.ugi.http;
+package com.fty1.simpleapi.cci.http;
 
-import com.fty1.simpleapi.ugi.http.request.Fty1RequestBody;
+import com.fty1.simpleapi.cci.http.request.Fty1RequestBody;
 
 public class Fty1RequestBodyBuilder {
 
@@ -11,7 +11,7 @@ public class Fty1RequestBodyBuilder {
             return false;
         }
 
-        return (null == fty1ResponseBody.getData());
+        return (null != fty1ResponseBody.getData());
     }
 
 }
