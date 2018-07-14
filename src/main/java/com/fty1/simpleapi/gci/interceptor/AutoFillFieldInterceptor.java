@@ -17,6 +17,6 @@ public class AutoFillFieldInterceptor extends EmptyInterceptor {
             ((SCIUriEntity) entity).setCtime(new Date());
         }
 
-        return true;
+        return false;
     }
 }
