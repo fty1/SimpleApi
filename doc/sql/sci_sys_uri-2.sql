@@ -32,4 +32,4 @@ CREATE TABLE `sci_sys_uri` (
   `uri_type` varchar(255) DEFAULT NULL,
   UNIQUE KEY `id` (`id`) USING BTREE,
   UNIQUE KEY `uri` (`uri`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDb DEFAULT CHARSET=utf8;

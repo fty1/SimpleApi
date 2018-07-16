@@ -1,6 +1,6 @@
-package com.fty1.simpleapi.cci.http;
+package com.fty1.simpleapi.ugi.http;
 
-import com.fty1.simpleapi.cci.http.request.Fty1RequestBody;
+import com.fty1.simpleapi.ugi.http.request.Fty1RequestBody;
 
 public class Fty1RequestBodyBuilder {
 

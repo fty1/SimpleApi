@@ -1,10 +1,10 @@
-package com.fty1.simpleapi.cci.http;
+package com.fty1.simpleapi.ugi.http;
 
-import com.fty1.simpleapi.cci.ResultConstant;
-import com.fty1.simpleapi.cci.http.response.Fty1ResponseBody;
-import com.fty1.simpleapi.cci.http.response.Fty1ResponsePageInfo;
-import com.fty1.simpleapi.cci.runtime.result.RTResult;
-import com.fty1.simpleapi.cci.runtime.result.RTResultPageInfo;
+import com.fty1.simpleapi.ugi.ResultConstant;
+import com.fty1.simpleapi.ugi.http.response.Fty1ResponseBody;
+import com.fty1.simpleapi.ugi.http.response.Fty1ResponsePageInfo;
+import com.fty1.simpleapi.ugi.runtime.result.RTResult;
+import com.fty1.simpleapi.ugi.runtime.result.RTResultPageInfo;
 
 public class Fty1ResponseBodyBuilder {
 
@@ -47,7 +47,7 @@ public class Fty1ResponseBodyBuilder {
         return builder(res.getSuccess(),res.getCode(),res.getMsg(),res.getData(),fty1ResponsePageInfo);
     }
 
-    public static Fty1ResponseBody throwable(Object e) {
-        return builder(false,ResultConstant.SYS_CODE_THROWABLE,ResultConstant.SYS_MSG_THROWABLE,e,null);
+    public static Fty1ResponseBody system(Exception e) {
+        return builder(false, ResultConstant.SYS_CODE_FAILUER,"系统异常",e,null);
     }
 }
