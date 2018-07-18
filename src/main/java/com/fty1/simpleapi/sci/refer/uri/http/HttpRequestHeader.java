@@ -1,4 +1,4 @@
-package com.fty1.simpleapi.sci.model.uri.http;
+package com.fty1.simpleapi.sci.refer.uri.http;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  *
  */
-public class HttpRequestTitle {
+public class HttpRequestHeader {
 
     private Map<String, Object> map = new HashMap<>();
 

@@ -1,4 +1,4 @@
-package com.fty1.simpleapi.sci.uri;
+package com.fty1.simpleapi.sci.refer.uri;
 
 
 /**

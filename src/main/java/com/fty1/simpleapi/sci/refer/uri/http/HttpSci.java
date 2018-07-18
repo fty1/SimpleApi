@@ -1,4 +1,4 @@
-package com.fty1.simpleapi.sci.model.uri.http;
+package com.fty1.simpleapi.sci.refer.uri.http;
 
 import com.fty1.simpleapi.sci.SCI;
 import com.fty1.simpleapi.sci.SCIParamter;

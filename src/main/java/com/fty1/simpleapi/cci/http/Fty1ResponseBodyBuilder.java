@@ -1,14 +1,15 @@
-package com.fty1.simpleapi.ugi.http;
+package com.fty1.simpleapi.cci.http;
 
-import com.fty1.simpleapi.ugi.ResultConstant;
-import com.fty1.simpleapi.ugi.http.response.Fty1ResponseBody;
-import com.fty1.simpleapi.ugi.http.response.Fty1ResponsePageInfo;
-import com.fty1.simpleapi.ugi.runtime.result.RTResult;
-import com.fty1.simpleapi.ugi.runtime.result.RTResultPageInfo;
+
+import com.fty1.simpleapi.cci.ResultConstant;
+import com.fty1.simpleapi.cci.http.response.Fty1ResponseBody;
+import com.fty1.simpleapi.cci.http.response.Fty1ResponsePageInfo;
+import com.fty1.simpleapi.cci.runtime.result.RTResult;
+import com.fty1.simpleapi.cci.runtime.result.RTResultPageInfo;
 
 public class Fty1ResponseBodyBuilder {
 
-    private static Fty1ResponseBody builder(Boolean success, String code, String msg, Object data,Fty1ResponsePageInfo pageInfo) {
+    private static Fty1ResponseBody builder(Boolean success, String code, String msg, Object data, Fty1ResponsePageInfo pageInfo) {
         Fty1ResponseBody responseBody = new Fty1ResponseBody();
         responseBody.setSuccess(success);
         responseBody.setCode(code);
@@ -34,7 +35,7 @@ public class Fty1ResponseBodyBuilder {
         return builder(false, ResultConstant.SYS_CODE_FAILUER,"数据为空",null,null);
     }
 
-    public static Fty1ResponseBody buildByRTResult(RTResult<Boolean> res) {
+    public static Fty1ResponseBody buildByRTResult(RTResult res) {
 
         if(null == res){
             return datanull();

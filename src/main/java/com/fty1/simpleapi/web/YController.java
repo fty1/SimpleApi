@@ -1,18 +1,27 @@
 package com.fty1.simpleapi.web;
 
+import com.fty1.simpleapi.cci.http.Fty1ResponseBodyBuilder;
+import com.fty1.simpleapi.cci.http.response.Fty1ResponseBody;
+import com.fty1.simpleapi.sci.jpa.entity.SCIUriEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @Controller
-@RequestMapping("/Y")
 public class YController {
 
-//    @RequestMapping(value = "/post",method = RequestMethod.POST)
-//    public Fty1ResponseBody post(@RequestBody Fty1ResponseBody<SCIUriEntity> req){
+    @RequestMapping("/")
+    @ResponseBody
+    public Fty1ResponseBody index(){
+        return Fty1ResponseBodyBuilder.success();
+    }
 //
-//        return "Y";
+//    @RequestMapping("/error")
+//    @ResponseBody
+//    public Fty1ResponseBody error(){
+//        return Fty1ResponseBodyBuilder.failure();
 //    }
+
+
 
 }

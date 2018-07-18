@@ -12,7 +12,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     @ResponseBody
     public Fty1ResponseBody exceptionHandler(Exception e){
-        return Fty1ResponseBodyBuilder.throwable(e.getMessage());
+        return Fty1ResponseBodyBuilder.system(e);
     }
 
 }

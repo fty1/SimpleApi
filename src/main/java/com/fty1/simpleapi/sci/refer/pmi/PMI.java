@@ -1,4 +1,4 @@
-package com.fty1.simpleapi.sci.pmi;
+package com.fty1.simpleapi.sci.refer.pmi;
 
 public interface PMI {
 
